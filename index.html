@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let balance = 0
+    let option = 0
+
+
+    while (option !== 4) {
+      option = parseInt(prompt('Please choose from these steps: \n 1.Deposit \n 2.Withdraw \n 3.Balance \n 4.Quit'))
+
+      switch (option) {
+        case 1:
+          let deposit = parseInt(prompt('please enter the amount you want to deposit'))
+          balance += deposit
+          alert(`your balance is : ${balance}`)
+          break;
+        case 2:
+          let withdraw = parseInt(prompt('please enter the amount you want to withdraw'))
+          balance -= withdraw
+          alert(`your balance is : ${balance}`)
+          break;
+        case 3:
+          alert(`your balance is : ${balance}`)
+          break;
+        case 4:
+          alert('bye bye')
+          break;
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
